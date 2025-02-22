@@ -10,7 +10,7 @@ set current_dir=%cd%
 cd /d "%~dp0"
 
 :: List files, excluding "desktop.ini"
-for /f "tokens=1" %%a in ('dir /b /a:-d ^| findstr /v /i "desktop.ini"') do echo %%~na
+for /f "tokens=1" %%a in ('dir /b /a:-d ^| findstr /v /i "desktop.ini README.md LICENSE"') do echo %%~na
 
 :: Return to the original directory
 cd /d "%current_dir%"
