@@ -1,6 +1,6 @@
 @echo on
 git add .
-git commit -m %1
+git commit -m %2
 
 :: Check if the current branch is master before renaming
 for /f "tokens=*" %%a in ('git symbolic-ref --short HEAD') do set branch=%%a
